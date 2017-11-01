@@ -3,25 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="12dp"
+    android:padding="@dimen/small"
     >
 
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numero 1"
+        android:hint="@string/num1"
         android:inputType="number"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="@dimen/small"
         />
 
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numero 2"
+        android:hint="@string/num2"
         android:inputType="number"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="@dimen/small"
         />
 
     <LinearLayout
@@ -35,28 +35,28 @@
             android:id="@+id/sum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sum"
+            android:text="@string/add"
             />
 
         <Button
             android:id="@+id/res"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Res"
+            android:text="@string/sub"
             />
 
         <Button
             android:id="@+id/mul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mul"
+            android:text="@string/mul"
             />
 
         <Button
             android:id="@+id/div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Div"
+            android:text="@string/div"
             />
         
     </LinearLayout>
@@ -66,8 +66,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="00"
-        android:textSize="90sp"
+        android:text="@string/result_default"
+        android:textSize="@dimen/result"
         />
 
 </LinearLayout>
